@@ -19,6 +19,15 @@
         return $app["twig"]->render("title_form.html.twig");
     });
 
+    $app->get("/display_formatted_title", function() use($app) {
+        $unformatted_title = $_GET["user_title"];
+
+        $title_case_generator_instance = new TitleCaseGenerator($unformatted_title);
+
+        $formatted_title = $title_case_generator_instance->formatTitleCase($unformatted_title);
+
+        return $app["twig"]->render("formatted_title.html.twig", array("unformatted_title" => $unformatted_title, "formatted_title" => $formatted_title));
+    });
 
     return $app;
  ?>

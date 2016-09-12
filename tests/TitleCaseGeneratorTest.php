@@ -107,5 +107,32 @@
             //ASSERT
             $this->assertEquals($expected_output, $test_result);
         }
+
+        // TEST FOR AN INPUT WITH NUMERICAL VALUE AMONG ANY NUMBER OF WORDS
+        function testMultipleWordsForNumerical() {
+            //ARRANGE
+            $input = "The 9 horsemen";
+            $expected_output = "The 9 Horsemen";
+
+            $test_TitleCaseGenerator = new TitleCaseGenerator($input);
+            //ACT
+            $test_result = $test_TitleCaseGenerator->formatTitleCase($input);
+            //ASSERT
+            $this->assertEquals($expected_output, $test_result);
+
+        }
+        // TEST FOR AN INPUT WITH NUMERICAL VALUES, NON-ALPHANUMERIC, AND LETTERS MIXED TO MAKE A STRING
+        function testLetterDigitNonalphanumericMix() {
+            //ARRANGE
+            $input = "tH3 Th!ng LIVING---> IN My cl0s31 BUt!!!!!!!";
+            $expected_output = "Th3 Th!ng Living---> in My Cl0s31 But!!!!!!!";
+
+            $test_TitleCaseGenerator = new TitleCaseGenerator($input);
+            //ACT
+            $test_result = $test_TitleCaseGenerator->formatTitleCase($input);
+            //ASSERT
+            $this->assertEquals($expected_output, $test_result);
+
+        }
     }
  ?>

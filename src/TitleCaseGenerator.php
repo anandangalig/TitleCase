@@ -51,7 +51,7 @@
             $output_title = $input_title;
             $output_title = strtolower($output_title);
             $output_title_words = explode(" ", $output_title);
-            
+
 
 
             /*NOTE: go through all words in input string and make first letter of each word upper case. The for-loop helps avoid single word tests failing*/
@@ -66,6 +66,7 @@
                         $output_title_words[$word_index][0] = strtoupper($output_title_words[$word_index][0]);
                     }
                 }
+
                 //NOTE: current word is not a special word
                 else {
                     $output_title_words[$word_index][0] = strtoupper($output_title_words[$word_index][0]);

@@ -69,7 +69,7 @@ _Special Words: {a, an, the, at, by, for, in, of, on, to, up, and, as, but, or, 
 
 * _Non alphabetic characters mishmash_
   + _IN:  tH3 Th!ng LIVING---> IN My cl0s31 BUt!!!!!!!_
-  + _OUT: Th3 Th!ng Living---> In My Cl0s31 But!!!!!!!_
+  + _OUT: Th3 Th!ng Living---> in My Cl0s31 But!!!!!!!_
 
 
 
