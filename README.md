@@ -56,7 +56,7 @@ _Special Words: {a, an, the, at, by, for, in, of, on, to, up, and, as, but, or, 
   + _OUT: The Jig Is Up_
 
 * _Multiple word title with all lowercase and a special word not in the beginning nor the end_
-  + _IN:  the thing living in my closest but_
+  + _IN:  the thing living in my closet but_
   + _OUT: The Thing Living in My Closet But_
 
 * _Mixed case input_
