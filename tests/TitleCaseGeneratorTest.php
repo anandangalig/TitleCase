@@ -18,5 +18,17 @@
             $this->assertEquals("T", $test_result);
         }
 
+        // TEST SINGLE LOWER CASE WORD
+        function testSingleWord() {
+            //ARRANGE
+            $input = "friendship";
+            $test_TitleCaseGenerator = new TitleCaseGenerator($input);
+
+            //ACT
+            $test_result = $test_TitleCaseGenerator->formatTitleCase($input);
+
+            //ASSERT
+            $this->assertEquals("Friendship", $test_result);
+        }
     }
  ?>

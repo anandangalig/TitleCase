@@ -22,7 +22,9 @@
         //TODO: Work on this as we test one spec at a time
         function formatTitleCase($input_title)
         {
-            return strtoupper($input_title);
+            $output_title = $input_title;
+            $output_title[0] = strtoupper($output_title[0]);
+            return $output_title;
         }
     }
 
