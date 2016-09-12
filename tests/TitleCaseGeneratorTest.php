@@ -30,5 +30,18 @@
             //ASSERT
             $this->assertEquals("Friendship", $test_result);
         }
+
+        // TEST MULTIPLE WORDS FOR LOWERCASE AND FOR THE EXISTENCE OF SPECIAL WORDS
+        function testMultipleAndForSpecial() {
+            //ARRANGE
+            $input = "american beauty";
+            $test_TitleCaseGenerator = new TitleCaseGenerator($input);
+
+            //ACT
+            $test_result = $test_TitleCaseGenerator->formatTitleCase($input);
+
+            //ASSERT
+            $this->assertEquals("American Beauty", $test_result);
+        }
     }
  ?>
