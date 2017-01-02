@@ -1,6 +1,6 @@
 # _titleCase_
 
-#### _Web app that takes in a user inputed string and formats it in accordance to book title case rules, it will use php, silex, twig, and tests (phpunit). 09.12.16_
+#### _Web app that takes in a user inputted string and formats it in accordance to book title case rules using php, silex, twig, and tests (phpunit). 09.12.16_
 
 #### By _**Alexandre Leibler, Kyle Fisher, Anand Angalig**_
 
@@ -17,7 +17,7 @@ _Given a string, titleCase will output a correctly formatted version of said use
   +  _1). Navigate to the directory in which you want the titleCase project to reside._
 
   +  _2). Enter the following command into your terminal:_
-        _git clone https://github.com/KomodoTech/titleCase.git_
+        _git clone https://github.com/anandangalig/TitleCase.git_
 
   +  _3). Navigate to the titleCase directory, and execute the following command in the terminal:_
           _composer install_
@@ -80,10 +80,7 @@ _None yet_
 
 ## Support and Contact Details
 
-_Please feel free to contact me through my github account (KomodoTech) or at the following email:_
-    _alexandre.leibler@gmail.com_
-    _kyle@kylefisher.com_
-    _anandangalig@gmail.com_
+_Please feel free to contact me through my github account or at anandangalig@gmail.com_
 
 ## Technologies Used
 
