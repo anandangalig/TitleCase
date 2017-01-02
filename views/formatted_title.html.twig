@@ -1,12 +1,15 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Formatted Title</title>
     </head>
     <body>
-        <!--TODO: make an actual form with labels and inputs-->
-        <h1>Here is the formatted title</h1>
+      <div style="text-align:center;" class="jumbotron">
+        <h1>Here is the result:</h1>
         <h3>Unformatted Title: {{ unformatted_title }}</h3>
         <h3>Formatted Title: {{ formatted_title }}</h3>
+        <a href="/" class="btn btn-success">Start Over</a>
+      </div>
     </body>
 </html>

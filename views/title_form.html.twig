@@ -1,15 +1,17 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Input Title Form</title>
     </head>
     <body>
-        <!--TODO: make an actual form with labels and inputs-->
-        <h1>Here is the form where user gives the title</h1>
+      <div style="text-align:center;" class="jumbotron">
+        <h1>titleCase Generator</h1>
         <form action="/display_formatted_title" method="get">
             <label for="user-title">Enter title to be formatted!</label>
             <input id="user-title" name="user_title" type="text">
-            <button type="submit">submit!</button>
+            <button class="btn btn-info" type="submit">Submit!</button>
         </form>
+      </div>
     </body>
 </html>
